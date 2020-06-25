@@ -21,7 +21,7 @@ function initMap() {
         geoLocControlDiv.className = 'controlContainer';
         let  controlButton = document.createElement('div');
         controlButton.className = 'controlButton';
-        controlButton.innerHTML = 'My Location'+'<img src="../icons/me.png" width=/"400px/" height=/"100%/}>';
+        controlButton.innerHTML = 'My Location'+'<img src="/icons/me.png" width=/"400px/" height=/"100%/}>';
         geoLocControlDiv.appendChild(controlButton);
         
         google.maps.event.addDomListener(controlButton, 'click', function() {
@@ -50,7 +50,7 @@ function initMap() {
                             position: coordinate,
                             map: map,
                             title: 'Private Hospital',
-                            icon:'../icons/private.png',
+                            icon:'/icons/private.png',
                             scaledSize: new google.maps.Size(1, 1), 
                            
                       })
@@ -71,7 +71,7 @@ function initMap() {
                             position: coordinate,
                             map: map,
                             title: 'Other hospital',
-                            icon:'../icons/other.png',
+                            icon:'/icons/other.png',
                             scaledSize: new google.maps.Size(-6, -6),
                            
                       });
@@ -90,7 +90,7 @@ function initMap() {
                         position: coordinate,
                         map: map,
                         title: 'District',
-                        icon:'../icons/district.png',
+                        icon:'/icons/district.png',
                         scaledSize: new google.maps.Size(5, 5), 
                       });
                       
@@ -104,7 +104,7 @@ function initMap() {
                   }   }
                 
               function parseData() {
-                  $.getJSON('../data/geojson.js', function(data) {
+                  $.getJSON('/data/geojson.js', function(data) {
                       $.each(data.features, function(key, val) {
                         createMarkers(val.geometry,val.properties);
                           window.infowindow=val.properties;
