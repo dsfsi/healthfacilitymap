@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Include Google Maps JS API -->
+        <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmnXXTiOa-95LfHKYmiO-3o0JOvpHO6og&sensor=true">
+		</script>
+		
+        <style type="text/css">
+            	html { height: 100% }
+				.nav {
+					display: flex;
+					justify-content: center;
+					list-style: none;
+					text-align: center;
+				}
+              body { height: 100%; margin: 0; }
+              #mapDiv { width: 100%; height: 80%; }
+              .controlContainer { padding: 5px; }
+              .controlButton { border-style:solid; border-color:rgb(0, 0, 0); border-width:5px; padding:8px; font-size:200% !important; color:rgb(255, 251, 0); background-color:rgb(93, 132, 214); font-weight:bold !important; }
+		</style>
+		
+        <!-- call JS script here-->
+		<script type="text/javascript" src="./script.js"> </script>
+	
+       
+	</head>
+	
+    <body onload="initMap()" class="border border-primary" >
+			<nav class="navbar navbar-dark bg-light" class="container-fluid-nav text-center">
+				<!-- Navbar content -->
+				<ul class="nav">
+					<li class="nav-item">
+					  <a class="nav-link "><img src="../icons/district.png" style="width: 20%;height:20%;">District Hospital</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link"><img src="../icons/private.png" style="width: 20%;height:20%;">Private Hospital</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" ><img src="../icons/other.png" style="width: 20%;height:20%;">Other Hospital</a>
+					</li>
+				  </ul>
+				
+
+				<div class="form-inline">
+					<a href="https://www.ineff.ch/cov19testmap/" class="btn btn-danger btn-sm active"  target="blank"  role="button" aria-pressed="true">Testing Map</a>
+					<a href="https://elolelo.github.io/covid19/" class="btn btn-dark btn-sm active"   target="blank"  role="button" aria-pressed="true">Editeable Map</a>
+				</div>
+			  </nav>
+		<div id="mapDiv" class="container-fluid"></div>
+		
+			<footer class="navbar navbar-dark bg-light" class="blockquote-footer">
+				<ul class="nav nav-tabs">
+					<li><a href="https://github.com/elolelo" target="blank"> N Mtsweni </a> , </li>
+					<li><a href="https://github.com/MikeMcMalace"  target="blank"> H Combrink </a> , </li>
+					<li><a href="https://github.com/vukosim"  target="blank"> V Marivate  </a> ,  </li>
+					<li ><a href="https://github.com/dsfsi/covid19za/graphs/contributors"  target="blank"> Data Science for Social Impact @UP, COVID19za contributors</a></li>
+				  </ul> 
+				  
+				  <cite title="Source Title">
+					Supported by:  <a href="https://cloud.google.com/"  target="blank">GCP </a>and <a href="https://www.iau.org/development/"  target="blank"> IAU </a>
+					<a href="https://github.com/dsfsi/covid19za" target="blank" class="btn btn-success btn-sm active" role="button" aria-pressed="true"> Repo for Data </a></cite></footer>
+    </body>
+</html>
