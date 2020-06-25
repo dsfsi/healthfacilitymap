@@ -21,7 +21,7 @@ function initMap() {
         geoLocControlDiv.className = 'controlContainer';
         let  controlButton = document.createElement('div');
         controlButton.className = 'controlButton';
-        controlButton.innerHTML = 'My Location'+'<img src="/icons/me.png" width=/"400px/" height=/"100%/}>';
+        controlButton.innerHTML = 'My Location'+'<img src="me.png" width=/"400px/" height=/"100%/}>';
         geoLocControlDiv.appendChild(controlButton);
         
         google.maps.event.addDomListener(controlButton, 'click', function() {
@@ -50,7 +50,7 @@ function initMap() {
                             position: coordinate,
                             map: map,
                             title: 'Private Hospital',
-                            icon:'/icons/private.png',
+                            icon:'private.png',
                             scaledSize: new google.maps.Size(1, 1), 
                            
                       })
@@ -58,7 +58,7 @@ function initMap() {
         
                     var infowindow = new google.maps.InfoWindow({
                         maxWidth: 120,
-                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+","+ myInfo.District+","+myInfo.Subdistrict+",Bed usable"+myInfo.BedsUsable+"</p></div>"
+                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+", "+ myInfo.District+","+myInfo.Subdistrict+", Bed usable: "+myInfo.BedsUsable+"</p></div>"
 
                     });
                     google.maps.event.addListener(marker, 'click', infoCallback(infowindow, marker));
@@ -71,14 +71,14 @@ function initMap() {
                             position: coordinate,
                             map: map,
                             title: 'Other hospital',
-                            icon:'/icons/other.png',
+                            icon:'other.png',
                             scaledSize: new google.maps.Size(-6, -6),
                            
                       });
                       // second infowindow
                       var infowindow = new google.maps.InfoWindow({
-                        maxWidth: 120,  
-                        content:"<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+","+ myInfo.District+","+myInfo.Subdistrict+",Bed usable"+myInfo.BedsUsable+"</p></div>"
+                        maxWidth: 100,  
+                        content:"<div class=infowindow><h6>"+myInfo.Name+"</h6><p> "+myInfo.Province+", "+ myInfo.District+", "+myInfo.Subdistrict+",Bed usable: "+myInfo.BedsUsable+"</p></div>"
                      });
 
                     // 2nd attachment  to the marker
@@ -90,13 +90,13 @@ function initMap() {
                         position: coordinate,
                         map: map,
                         title: 'District',
-                        icon:'/icons/district.png',
+                        icon:'district.png',
                         scaledSize: new google.maps.Size(5, 5), 
                       });
                       
                       var infowindow = new google.maps.InfoWindow({
-                        maxWidth: 120,
-                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+", "+ myInfo.District+", "+myInfo.Subdistrict+",Bed usable: "+myInfo.BedsUsable+"</p></div>"
+                        maxWidth: 100,
+                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p> "+myInfo.Province+", "+ myInfo.District+", "+myInfo.Subdistrict+",Bed usable: "+myInfo.BedsUsable+"</p></div>"
                     
                     });
 
@@ -104,7 +104,7 @@ function initMap() {
                   }   }
                 
               function parseData() {
-                  $.getJSON('/data/geojson.js', function(data) {
+                  $.getJSON('geojson.js', function(data) {
                       $.each(data.features, function(key, val) {
                         createMarkers(val.geometry,val.properties);
                           window.infowindow=val.properties;
