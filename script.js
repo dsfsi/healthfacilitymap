@@ -58,7 +58,7 @@ function initMap() {
         
                     var infowindow = new google.maps.InfoWindow({
                         maxWidth: 120,
-                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+", "+ myInfo.District+","+myInfo.Subdistrict+", Bed usable: "+myInfo.BedsUsable+"</p></div>"
+                        content: "<div class=infowindow><h6>"+myInfo.Name+"</h6><p>"+myInfo.Province+", "+ myInfo.District+", "+myInfo.Subdistrict+", Bed usable: "+myInfo.BedsUsable+"</p></div>"
 
                     });
                     google.maps.event.addListener(marker, 'click', infoCallback(infowindow, marker));
