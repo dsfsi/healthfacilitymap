@@ -18,9 +18,10 @@
 
 ## Meta
 
-Nompumelelo Mtsweni
-Herkulaas MVE Combrink
-Vukosi Marivate
+- Nompumelelo Mtsweni
+- Herkulaas MVE Combrink
+- Vukosi Marivate [github/@vukosim](https://github.com/vukosim) [twitter/@vukosi](https://twitter.com/vukosi)
+- [dsfsi/covid19za contributors and volunteers](https://github.com/dsfsi/covid19za)
 
 See ``LICENSE`` for more information.
 
