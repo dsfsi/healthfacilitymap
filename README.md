@@ -1,6 +1,7 @@
 # South African Health Facility Map
 >  TODO Blurb
 
+![](images/updatedmap.png)
 ## Installation
 
 
