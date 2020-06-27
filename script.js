@@ -49,7 +49,7 @@ function initMap() {
                       let marker = new google.maps.Marker({
                             position: coordinate,
                             map: map,
-                            title: 'Private Hospital',
+                            title:myInfo.Name,
                             icon:'private.png',
                             scaledSize: new google.maps.Size(1, 1), 
                            
@@ -70,7 +70,7 @@ function initMap() {
                       let marker = new google.maps.Marker({
                             position: coordinate,
                             map: map,
-                            title: 'Other hospital',
+                            title:myInfo.Name,
                             icon:'other.png',
                             scaledSize: new google.maps.Size(-6, -6),
                            
@@ -89,7 +89,7 @@ function initMap() {
                       let marker = new google.maps.Marker({
                         position: coordinate,
                         map: map,
-                        title: 'District',
+                        title: myInfo.Name,
                         icon:'district.png',
                         scaledSize: new google.maps.Size(5, 5), 
                       });
