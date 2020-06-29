@@ -104,7 +104,7 @@ function initMap() {
                   }   }
                 
               function parseData() {
-                  $.getJSON('./src/geojson.js', function(data) {
+                  $.getJSON('src/geojson.js', function(data) {
                       $.each(data.features, function(key, val) {
                         createMarkers(val.geometry,val.properties);
                           window.infowindow=val.properties;
