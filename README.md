@@ -5,7 +5,7 @@
 
 ## Installation
 
-There are no specific pre-requisite libraries or framework needed to be installed for run this project. 
+There are no specific pre-requisite libraries or framework needed to be installed to run this project. 
 
 This assumes that you have some internet access for cdn scripts (Jquery, AJAX and bootstrap). 
 
@@ -13,16 +13,16 @@ After cloning / forking it - simply replace the Google Maps Javascript API key w
 
 If you have your own geoJSON data, you may replace it following the convention of the currently used geoJson file.
 
-If you have your data as a csv and you wish to convert it to geJSON, you could use [this tool](https://www.convertcsv.com/csv-to-geojson.htm)  
+If you have your data as a csv and you wish to convert it to geoJSON, you could use [this tool](https://www.convertcsv.com/csv-to-geojson.htm)  
 
 ## Usage example
 
-1. You may use this to view the capacities of health facilites around you, mostly which are public and private hospitals. Use the geolocation feature that can be accessed from the big blue button with yellow text "My Location" , to locate your self (Obviously the map boundries are define to be South African centric). 
+1. You may use this to view the bed capacities of health facilites around you, mostly which are public and private hospitals. Use the geolocation feature that can be accessed from the big blue button with yellow text "My Location" , to locate your self (Obviously the map boundries are define to be South African centric). 
 Once located, then click on the the marker of your interest to get more details about that hospital . 
 
-2. Whats great about this map is you can get multiple detials at once , in case you wish to campare the facility of one hospital to a few more others. So the pop up info windows, do not open one at the time but they can all open at once. 
+2. Whats great about this map is you can get multiple detials at once , in case you wish to campare the bed capacity of one hospital to a few more others. So the pop up info windows, do not open one at the time but they can all open at once. 
 
-This is just a start, you may suggest more features for this map [here](https://docs.google.com/forms/d/e/1FAIpQLSeMm5zm-syGnw-l06QV2q6caFtNldS3nBsAoIPzs3G2e4-ncg/viewform)
+This project is just a start, you may suggest more features for this map [here](https://docs.google.com/forms/d/e/1FAIpQLSeMm5zm-syGnw-l06QV2q6caFtNldS3nBsAoIPzs3G2e4-ncg/viewform)
 
 
 ## Development setup
