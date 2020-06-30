@@ -1,5 +1,5 @@
 # South African Health Facility Map
->  TODO Blurb
+[![arxiv](https://img.shields.io/badge/cs.CY-arXiv%3A2006.15216-B31B1B.svg)](https://arxiv.org/abs2006.15216)
 
 ![](images/updatedmap.png)
 
@@ -54,3 +54,19 @@ See ``LICENSE`` for more information.
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
+
+## Data
+The data is from the [dsfsi/covid19za](https://github.com/dsfsi/covid19za) project. The license is [CC 4.0 BY SA](https://github.com/dsfsi/covid19za/blob/master/data/LICENSE.md)
+
+## Citing the work
+
+>@article{mtsweni2020map,
+	Author = {Nompumelelo Mtsweni and Herkulaas MvE Combrink andVukosi Marivate},
+	journal = {ArXiv e-prints},
+	title = {Mapping the South African health landscape in response to COVID-19},
+   eprint = {2006.15216},
+   archivePrefix={arXiv}, 
+   primaryClass={cs.CY}, 
+   url = {[https://arxiv.org/abs/2006.15216](https://arxiv.org/abs/2006.15216)}
+}
+
