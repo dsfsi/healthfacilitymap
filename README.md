@@ -1,5 +1,5 @@
 # South African Health Facility Map
-[![arxiv](https://img.shields.io/badge/cs.CY-arXiv%3A2006.15216-B31B1B.svg)](https://arxiv.org/abs2006.15216)
+[![arxiv](https://img.shields.io/badge/cs.CY-arXiv%3A2006.15216-B31B1B.svg)](https://arxiv.org/abs/2006.15216)
 
 ![](images/updatedmap.png)
 
