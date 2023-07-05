@@ -5,33 +5,32 @@
 
 ## Installation
 
-There are no specific pre-requisite libraries or framework needed to be installed to run this project. 
+To run this project, you need to have jQuery installed as a prerequisite library. The project relies on CDN scripts for jQuery, AJAX, and Bootstrap.
 
-This assumes that you have some internet access for cdn scripts (Jquery, AJAX and bootstrap). 
+After cloning or forking the project, simply replace the Google Maps JavaScript API key with your own key. If you want to use the geolocation feature without the overlaying transparent cover with the text "FOR DEVELOPMENT PURPOSES," make sure your API key is from a Google Cloud account that is enabled for billing.
 
-After cloning / forking it - simply replace the Google Maps Javascript API key with your own. To use the geolocation feature with clear view (not one with overlaying transparent cover with text  `"FOR DEVELOPMENT PURPOSES" `). To deploy this for use beyond locally hosting, your API key needs to be from a Google Cloud account that is enabled for billing. 
+If you have your own geoJSON data, you can replace the existing data by following the convention of the currently used geoJSON file.
 
-If you have your own geoJSON data, you may replace it following the convention of the currently used geoJson file.
-
-If you have your data as a csv and you wish to convert it to geoJSON, you could use [this tool](https://www.convertcsv.com/csv-to-geojson.htm)  
+If you have data in CSV format and want to convert it to geoJSON, you can use [this tool](https://www.convertcsv.com/csv-to-geojson.htm)  
 
 ## Usage example
 
-1. You may use this to view the bed capacities of health facilites around you, mostly which are public and private hospitals. Use the geolocation feature that can be accessed from the big blue button with yellow text "My Location" , to locate your self (Obviously the map boundries are define to be South African centric). 
-Once located, then click on the the marker of your interest to get more details about that hospital . 
+The below mentioned use cases make the map helpful for individuals seeking information about health facilities and their capacities in a specific area, aiding in decision-making and resource planning.
 
-2. Whats great about this map is you can get multiple detials at once , in case you wish to campare the bed capacity of one hospital to a few more others. So the pop up info windows, do not open one at the time but they can all open at once. 
+1. Viewing Health Facility Bed Capacities: The map allows users to view the bed capacities of health facilities, particularly public and private hospitals, in a specific location. Users can click on markers representing each facility to access more details about that hospital. 
+
+2. Geolocation Feature: The map includes a geolocation feature that allows users to locate themselves on the map. By clicking the "My Location" button, the map centers on the user's current location, providing a convenient way to find nearby health facilities and their bed capacities.
+
+3. Comparing Bed Capacities: The map enables users to compare the bed capacities of multiple health facilities simultaneously. The pop-up info windows associated with each marker can open concurrently, allowing users to gather information from multiple hospitals at once.
 
 This project is just a start, you may suggest more features for this map [here](https://docs.google.com/forms/d/e/1FAIpQLSeMm5zm-syGnw-l06QV2q6caFtNldS3nBsAoIPzs3G2e4-ncg/viewform)
 
 
 ## Development setup
 
-When developing this mapping exercise , VS code text editor was used  with a live server extension  to get a live preview during built time. But I think it should be ok to use any text editor of your choice. 
+For development, we used Visual Studio Code text editor with a live server extension to get a live preview during build time. However, you can use any text editor and extension of your choice.
 
-Knowledge of JS , HTML and some styling will make it easy to customize this. 
-
-To run locally (assuming you are using the tools mentioned prior) - right click on the HTML file and select an option  `"Open with live server" `
+To run the project locally (assuming you are using the aforementioned tools), right-click on the HTML file and select the option `"Open with live server" `
 
 ## Release History
 
@@ -69,4 +68,6 @@ The data is from the [dsfsi/covid19za](https://github.com/dsfsi/covid19za) proje
    primaryClass={cs.CY}, 
    url = {[https://arxiv.org/abs/2006.15216](https://arxiv.org/abs/2006.15216)}
 }
+
+
 
