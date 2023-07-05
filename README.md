@@ -5,7 +5,7 @@
 
 ## Installation
 
-To run this project, you need to have jQuery installed as a prerequisite library. The project relies on CDN scripts for jQuery, AJAX, and Bootstrap.
+To run this project, you may to have to use jQuery installed as a prerequisite library or use a standard fetch API for data calls. 
 
 After cloning or forking the project, simply replace the Google Maps JavaScript API key with your own key. If you want to use the geolocation feature without the overlaying transparent cover with the text "FOR DEVELOPMENT PURPOSES," make sure your API key is from a Google Cloud account that is enabled for billing.
 
