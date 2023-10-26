@@ -1,6 +1,8 @@
 # South African Health Facility Map
 [![arxiv](https://img.shields.io/badge/cs.CY-arXiv%3A2006.15216-B31B1B.svg)](https://arxiv.org/abs/2006.15216)
 
+Give Feedback 📑: [DSFSI Resource Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSf7S36dyAUPx2egmXbFpnTBuzoRulhL5Elu-N1eoMhaO7v10w/formResponse)
+
 ![](images/updatedmap.png)
 
 ## Installation
